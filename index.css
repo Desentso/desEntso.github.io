@@ -392,6 +392,14 @@ a {
   -ms-interpolation-mode: nearest-neighbor;
 }
 
+@media (min-width: 750px) and (max-width: 1050px){
+  
+  .chart {
+    height: initial;
+    width: 100%;
+  }
+  
+}
 
 @media screen and (max-width: 600px){
 
