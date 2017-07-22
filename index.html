@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DesEntso - Portfolio</title>
+  <meta name="viewport" content="width=device-width">
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700|Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="index.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+
+<div id="imgBack">
+  <img src="#" id="fullImg">
+</div>
+
+<div class="landing">
+  
+  <div class="headerCont">
+    <ul class="header">
+      <li class="headerItem"><a href="#about">ABOUT</a></li>
+      <li class="headerItem"><a href="#work">WORK</a></li>
+      <li class="headerItem"><a href="#contact">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <a name="about"></a>
+  <div class="about">
+
+    <h1 class="title">About</h1>
+    <p class="aboutText">I'm a software developer from Finland. I develop full-stack web apps e.g Countle.com, scripts/bots e.g the Time zone bot, and games. I am going to study Computer Science in the Aalto University from 2018. In the future I would like to build a more complex full-stack web app and learn more about game development.</p>
+    <p class="aboutTech">Languages I use</p>
+    <!--<p class="aboutTechLangs">HTML&CSS, JavaScript (JQuery and Node.js), Python, Flask (Python framework), Java</p>-->
+    <p class="aboutTechLangs">
+      <span class="abTechLang">JavaScript</span>
+      <span class="abTechLang">Python</span>
+      <span class="abTechLang">Java</span>
+      <span class="abTechLang">SQL</span>
+      <span class="abTechLang">HTML&CSS</span>
+    </p>
+    <p class="aboutTech">Libraries/Frameworks I use</p>
+    <p class="aboutTechLangs">
+      <span class="abTechLang">Node.js</span>
+      <span class="abTechLang">Flask</span>
+      <span class="abTechLang">Regex</span>
+      <span class="abTechLang">PostgreSQL</span>
+    </p>
+
+    <div class="profiles">
+      <a href="https://codepen.io/Desentso"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Small.png" class="logo"></a>
+      <a href="https://github.com/Desentso"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" class="logo"></a>
+    </div>
+
+  </div>
+<!--
+  <h1 class="title">DesEntso</h1>
+  <p class="quote">"The only way to do great work is to love what you do." – Steve Jobs</p>
+  <div class="langs">
+    <h4 class="lang">WEB</h4>
+    <h4 class="lang">PYTHON</h4>
+    <h4 class="lang">JAVA</h4>
+  </div>-->
+
+</div>
+
+<a name="work"></a>
+<div class="work">
+  <h2 class="secTitle">Work</h2>
+  
+  <a name="timezonebot"></a>
+  <div class="project">
+    <h3 class="projectName">Time zone bot for Reddit and Discord</h3>
+
+    <div class="leftCont">
+      <img class="projectImg chart" src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\timezonebotChart.png" alt="" />
+    </div>
+
+    <div class="rightCont">
+      <h3 class="descTitle">Technologies Used</h3>
+      <div class="techBox">
+        <p class="tech">Python</p>
+        <p class="tech">Regex</p>
+        <p class="tech">Reddit API</p>
+      </div>
+      <br />
+      <h3 class="descTitle">Overview</h3>
+      <p class="desc">The Time zone bot is a bot that automatically searches for posts and comments in the Reddit looking for times with time zone information. The time zone bot then calculates how many hours and minutes until the time happens and posts this to the Reddit. It also uses the <a href="#countle" class="link">Countle</a> API to create a countdown.
+        <br>
+        <br>
+        The Time zone Bot uses the Reddit API to get new posts and comments. First it filters the posts by e.g too long, posted by another bot. After that it uses regex to find common time formats with time zone info. Then it tries to determine the tense of the comment/post and search for dates and keywords, to make sure that the time happens in the future/present and not in the past. If everything passes the bot sends the comment.
+
+        <br><br>
+        The time zone bot has got very positive feedback from the users on Reddit. <i>"Best bot on Reddit! Thank you so much", "This is my favourite bot", "This bot needs to appear on every thread", "a useful bot, I like this"</i>
+        <br><br>
+        You can find the code from GitHub: <a href="https://github.com/Desentso/TimezoneBotReddit" class="link">https://github.com/Desentso/TimezoneBotReddit</a> and the /u/timezone_bot here: <a href="https://reddit.com/u/timezone_bot" class="link">https://reddit.com/u/timezone_bot</a>
+      </p>
+      <br />
+      <h3 class="descTitle">Challenges</h3>
+      <p class="desc">It was hard to make sure that the time happens in the future and not in the past. This was solved by searching for dates and keywords. Later I found a way to analyze the sentences tense, (past, present, future). Using these together reduced the false positives a lot.</p>
+    </div>
+  </div>
+
+  <a name="countle"></a>
+  <div class="project">
+    <h3 class="projectName">Countle.com</h3>
+    <div class="leftCont">
+      <img class="projectImg left" src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\countle.png" alt="" />
+      <img class="projectImg" src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\countle2.png">
+    </div>
+
+    <div class="rightCont">
+      <h3 class="descTitle right">Technologies Used</h3>
+      <div class="techBox">
+        <p class="tech">HTML & CSS</p>
+        <p class="tech">JavaScript</p>
+        <p class="tech">Node.js</p>
+        <p class="tech">SQL (PostgreSQL)</p>
+      </div>
+      <br />
+      <h3 class="descTitle right">Overview</h3>
+      <p class="desc right"><a href="https://countle.com" class="link">Countle</a> is a countdown website. What makes Countle special is that you can just enter the date string you found from other website or social media and Countle automatically creates a countdown from that.
+        <br>
+        <br>
+        Originally Countle was created for <a href="#timezonebot" class="link">the Time zone bot</a> to host the countdowns it generated, because of that Countle also has an API that can be used to create and retrieve countdowns.
+        <br>
+        <br>
+        Countle.com gets over 150,000 pageviews a month. Most of the traffic comes from the Time zone bot.
+      </p>
+      <br />
+      <h3 class="descTitle right">Challenges</h3>
+      <p class="desc right">Node.js requires asynchronous programming as it only has one instance for the server. It was at first hard to get used to it and required quite a lot of studying about node.js and asynchronous programming in general.</p>
+    </div>
+  </div>
+  
+  <div class="project">
+    <h3 class="projectName">JavaScript Game</h3>
+    <div class="leftCont">
+      <img class="projectImg chart" id="jsGamePic" src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\jsGame.png" alt="" />
+    </div>
+
+    <div class="rightCont">
+      <h3 class="descTitle right">Technologies Used</h3>
+      <div class="techBox">
+        <p class="tech">JavaScript</p>
+      </div>
+      <br />
+      <h3 class="descTitle right">Overview</h3>
+      <p class="desc right">The game is created with pure Javascript. It is inspired by a popular mobile game called "BBTAN". The game is never-ending. Your goal is to clear the boxes and not let them hit the bottom. The boxes have hit points, when you hit a box with a ball the hit points go down by one, the box disappears when its hit points go to zero. You start with one ball, but can get more balls by hitting the little balls with a plus sign. When all balls have exited through the bottom a new round starts. At the start of a new round, a new row of boxes appears. As the game goes on the new round of boxes gets more hit points. You score a point when you survive one round.
+        <br>
+        <br>
+        You can play the game here: <a href="E:/K%C3%A4ytt%C3%A4j%C3%A4t/Tiedostot/Nettisivu/Portfolio_Website_New_Try/jsGame.html" class="link">https://www.myportfolio.com/jsgame</a>
+      </p>
+      <br />
+      <h3 class="descTitle right">Challenges</h3>
+      <p class="desc right">Creating a good collision-detection was surprisingly difficult. After reading more about the concept and tutorials I got it somewhat working, although it still has some weird bugs when the balls hit the boxes in specific angles and corners.</p>
+      <p class="desc right">I made some poor design choices at the start which made it really hard to update features and debug e.g collision-detection. </p>
+    </div>
+  </div>
+
+  <div class="project">
+    <h3 class="projectName">Fovents.com</h3>
+    <div class="leftCont">
+      <img class="projectImg left" src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\fovents.png" alt="" />
+      <img class="projectImg" src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\fovents2.png">
+    </div>
+
+    <div class="rightCont">
+      <h3 class="descTitle right">Technologies Used</h3>
+      <div class="techBox">
+        <p class="tech">HTML & CSS</p>
+        <p class="tech">JavaScript</p>
+        <p class="tech">Python (Flask)</p>
+        <p class="tech">SQL (SQLite3)</p>
+        <p class="tech">Numerous APIs</p>
+      </div>
+      <br />
+      <h3 class="descTitle right">Overview</h3>
+      <p class="desc right"><a href="https://countle.com" class="link">Fovents</a> is a website for foodtrucks. Fovents uses many event API's and combines the relevant results. The user can search the events by their location, radius,  date and category. They can also move to a place on a map and search on a certain radius. The events are displayed on a map. The user can also save events for later retrieving. 
+        <br><br>
+        The backend is created with Python using the Flask framework. SQLite3 is used to store user information, like account data and saved events. The server and client communicates with an API. 
+      </p>
+      <br />
+      <h3 class="descTitle right">Challenges</h3>
+      <p class="desc right">It was my first time creating a full-stack app. Basically everything from client-server communicating to user information storing was new. It was definitely one of the most challenging projects, but also very teaching.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <h3 class="projectName">UnitedLoL</h3>
+    <div class="leftCont">
+      <img class="projectImg left" src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\unitedLol.png" alt="" />
+      <img class="projectImg" src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\unitedLol2.png">
+    </div>
+
+    <div class="rightCont">
+      <h3 class="descTitle right">Technologies Used</h3>
+      <div class="techBox">
+        <p class="tech">HTML & CSS</p>
+        <p class="tech">JavaScript</p>
+        <p class="tech">Node.js</p>
+        <p class="tech">Socket.io</p>
+      </div>
+      <br />
+      <h3 class="descTitle right">Overview</h3>
+      <p class="desc right">UnitedLoL is a website for League Of Legends players that are looking for people to play with. It matches people that are looking for a group with people that already have a group (atleast 2 players). It has a simple queue system that automatically matches people to a group in time order. If you were the first one looking for group, you will be the first one to get matched.
+        <br><br>
+        The app uses web sockets, socket.io as a framework. Sockets in this case reduces server-load and makes the user experience smoother and faster. You instantly get notified when you get matched, if it used Ajax calls there would be bigger delay. The backend is coded with Node.js and socket.io.
+      <br><br>
+      You can find the code from Github <a href="https://github.com/Desentso/UnitedLoL" class="link">https://github.com/Desentso/UnitedLoL</a>
+      </p>
+      <br />
+      <h3 class="descTitle right">Challenges</h3>
+      <p class="desc right">First time working with sockets, so I had to study them a bit. Socket.io helped a lot with the sockets but it was still a new concept and a tool I had to learn.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <h3 class="projectName">BlackJack</h3>
+    <div class="leftCont">
+      <img class="projectImg left" src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\blackjack.png" alt="" />
+    </div>
+
+    <div class="rightCont">
+      <h3 class="descTitle right">Technologies Used</h3>
+      <div class="techBox">
+        <p class="tech">Java</p>
+      </div>
+      <br />
+      <h3 class="descTitle right">Overview</h3>
+      <p class="desc right">The game works just like any other Blackjack game. It allows betting. The game uses 4 decks and shows unique cards.
+        <br><br>
+        It's coded with Java and uses object-oriented programming.
+        You can find the code from Github: <a class="link" href="https://github.com/Desentso/Blackjack">https://github.com/Desentso/Blackjack</a>
+      </p>
+      <br />
+      <h3 class="descTitle right">Challenges</h3>
+      <p class="desc right">First time I created a game with Java so getting everything right was challenging. Making the GUI was maybe the most challenging part, also the game flow and displaying all the right information to player.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <h3 class="projectName">Other Projects</h3>
+    <p class="desc">I have built some other projects too. Mostly with JavaScript and Python. For JavaScript I have mostly used codepen.io service. Here are some highlights from my codepen.io. You can find more from my codepen profile <a href="https://codepen.io/Desentso" class="link">https://codepen.io/Desentso</a></p>
+    <div class="smallProjectsCont">
+
+      <a href="https://codepen.io/Desentso/full/JdvQza/"><div class="smallProject">
+        <h4 class="smallPTitle">Egg Timer</h4>
+        <img src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\eggtimer.png" class="smallImg">
+      </div></a>
+
+      <a href="https://codepen.io/Desentso/full/mJKzXM/"><div class="smallProject">
+        <h4 class="smallPTitle">Calculator</h4>
+        <img src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\calc.png" class="smallImg">
+      </div></a>
+
+      <a href="https://codepen.io/Desentso/full/pJVOMQ/"><div class="smallProject">
+        <h4 class="smallPTitle">Wikipedia Searcher</h4>
+        <img src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\wpSearcher.png" class="smallImg">
+      </div></a>
+
+      <a href="https://codepen.io/Desentso/full/wgwgKQ/"><div class="smallProject">
+        <h4 class="smallPTitle">Firework Animation</h4>
+        <img src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\firework.png" class="smallImg">
+      </div></a>
+
+      <a href="https://codepen.io/Desentso/full/jWqZPO/"><div class="smallProject">
+        <h4 class="smallPTitle">BlackJack</h4>
+        <img src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\blackjackJS.png" class="smallImg">
+      </div></a>
+
+      <a href="https://codepen.io/Desentso/full/NbpQOL/"><div class="smallProject">
+        <h4 class="smallPTitle">Ball Bounce Animation</h4>
+        <img src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\ballbounce.png" class="smallImg">
+      </div></a>
+
+      <a href="https://codepen.io/Desentso/full/PzxENP/"><div class="smallProject">
+        <h4 class="smallPTitle">Grid UI</h4>
+        <img src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\gridui.png" class="smallImg">
+      </div></a>
+
+
+      <h3 class="projectName">Python Scripts/Bots</h3>
+      <p class="desc">I have built many Python scripts and bots, but mostly for my own use. Here are some that could be useful for public use. </p>
+      <br><br>
+
+      <a href="https://github.com/Desentso/TwitterBots">
+        <div class="smallProject">
+          <h4 class="smallPTitle">Twitter Scripts/Bots</h4>
+          <img src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\eggt imer.png" class="smallImg">
+        </div>
+      </a>
+
+      <a href="https://github.com/Desentso/WebScrapers">
+        <div class="smallProject">
+          <h4 class="smallPTitle">Web Scrapers</h4>
+          <img src="E:\Käyttäjät\Tiedostot\Nettisivu\Portfolio_Website_New_Try\Images\eggt imer.png" class="smallImg">
+        </div>
+      </a>
+
+    </div>
+  </div>
+  
+</div>
+
+<a name="contact"></a>
+<div class="contact">
+
+  <h2 class="secTitle">Contact</h2>
+
+  <form class="form" method="POST" action="http://formspree.io/desentsobusiness@gmail.com">
+
+    <label class="label">Name</label>
+    <input class="input" type="text" name="name" id="name">
+    <div id="nameerr" class="error">Name is required</div>
+
+    <label class="label">E-mail</label>
+    <input class="input" type="email" name="email" id="email" required>
+    <div id="emailerr" class="error">Name is required</div>
+
+    <label class="label">Subject</label>
+    <input class="input" type="text" name="subject" id="subject">
+    <div id="subjecterr" class="error">Name is required</div>
+
+    <label class="label">Message</label>
+    <textarea id="message" name="message" required></textarea>
+    <div id="messageerr" class="error">Name is required</div>
+
+    <input type="submit" value="Send" id="submit">
+
+  </form>
+
+</div>
+
+</body>
+</html>

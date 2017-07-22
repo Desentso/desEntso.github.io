@@ -1,0 +1,454 @@
+body {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans"
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: underline;
+  color: #0075ff;
+}
+
+.background {
+    display: inline-block;
+    width: 100%;
+    height: 900px;
+    /*background-image: url(http://www.gainesvilleconnect.com/images/footer-patterns/footer-pattern-03.png);
+    background-size: cover;*/
+}
+
+.landing {
+  width: 90%;
+  margin:auto;
+  //text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+
+}
+
+.headerCont {
+  width: 100%;
+  height: 90px;
+}
+
+.header {
+  float:right;
+  list-style-type: none;
+  width: 20%;
+  margin-right: 10%;
+  padding-top: 20px;
+}
+
+.headerItem{
+  float: left;
+  margin-left: 30px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.headerItem:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;
+}
+
+.headerItem:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+
+.about {
+  width: 90%;
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.title {
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.aboutTech {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.aboutTechLangs {
+  font- size: 20px;
+  margin-top: 15px;
+}
+
+.abTechLang {
+  margin-right: 16px;
+  padding: 6px 10px;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+}
+
+.aboutText {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.logo {
+  width: 80px;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+
+/*.title {
+  font-size: 60px;
+  margin: 0;
+  padding-top: 300px;
+  letter-spacing: 5px;
+}*/
+
+.quote {
+  font-style: italic;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.langs {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.lang {
+  float: left;
+  width: 32%;
+  font-size: 20px;
+  font-family: "Roboto Slab"
+}
+
+/*.work {
+  width: 70%;
+  margin: auto;
+  padding-top: 50px;
+  height: 1000px;
+}
+
+.secTitle {
+  font-size: 40px;
+  text-align: center;
+}
+
+.project {
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.2)
+}
+
+.projectImg {
+  width: 55%;
+  height: 500px;
+
+}*/
+
+
+
+
+.work {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  padding-top: 50px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.secTitle {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 120px;
+}
+
+.project {
+  width: 100%;
+  margin-bottom: 175px;
+}
+
+.projectName {
+  margin-bottom: 0;
+  font-size: 32px;
+  margin-top: 70px;
+  borde r-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.leftCont {
+  width: 48%;
+  display: inline-block;
+  text-align: center;
+  float: right;
+}
+
+.rightCont {
+  width: 48%;
+  margin-right: 3.5%;
+  display: inline-block;
+}
+
+.projectImg {
+  width: 100%;
+  margin-top: 45px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering:   -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  cursor: -webkit-zoom-in;
+}
+
+.descTitle {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 22px;
+}
+
+.desc {
+  margin-top: 10px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.techBox {
+  width: 100%;
+}
+
+.tech {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 6px 10px;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.leftTech {
+  margin-left: 6%;
+}
+
+.tech:hover {
+  background-color: #ddd;
+}
+
+.left {
+}
+
+.right {
+}
+
+.chart {
+  width: initial;
+  height: 765px;
+  vertical-align: top;
+  margin: auto;
+  margin-top: 50px;
+}
+
+
+
+.contact {
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+.form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.label {
+  display: block;
+  font-size: 18px;
+}
+
+.input {
+  display: block;
+  border: 1px solid #aaa;
+  width: 100%;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-top: 6px;
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+#message {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  max-width: 100%;
+  padding: 2px 4px;
+  font-size: 18px;
+  font-family: inherit;
+  margin-top: 6px;
+}
+
+#submit {
+  font-size: 20px;
+  margin: auto;
+  margin-top: 10px;
+  display: block;
+  padding: 5px 10px;
+}
+
+.error {
+  display: none;
+  background-color: #ffde4a;
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: white;
+  width: 90%;
+}
+
+
+
+#imgBack {
+  display: none;
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#fullImg {
+  height: 85%;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 3.75%;
+  image-rendering: -moz-crisp-edges;
+  image-rendering:   -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+
+
+.smallProjectsCont {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.smallProject {
+  display: inline-block;
+  bor der: 1px solid black;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.smallPTitle {
+  margin-top: 0;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.smallImg {
+  width: 100%;
+  height: 200px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering:   -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+
+@media screen and (max-width: 600px){
+
+  .project {
+    height: initial;
+  }
+
+  .work {
+    width: 90%;
+  }
+
+  .leftCont, .rightCont {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .chart {
+    max-width: 90%;
+    height: initial;
+  }
+
+  .right {
+    float: none;
+  }
+
+  .left {
+    float: none;
+  }
+
+  .desc {
+    margin-left: 0;
+  }
+
+  .headerCont {
+    margin: auto
+  }
+
+  .header {
+    margin-right: 0;
+    padding-left: 0;
+    float: none;
+    width: 300px;
+    margin: auto;
+  }
+
+  .headerItem {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .about {
+    padding-top: 35px;
+  }
+
+  .abTechLang {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+}
