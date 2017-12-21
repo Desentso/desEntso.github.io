@@ -133,6 +133,31 @@
   </div>
   
   <div class="project">
+
+    <h3 class="projectName">Python remote control program</h3>
+    <div class="leftCont">
+      <img class="projectImg" src="\Images\py2.png">
+    </div>
+
+    <div class="rightCont">
+      <h3 class="descTitle right">Technologies Used</h3>
+      <div class="techBox">
+        <p class="tech">Python</p>
+      </div>
+      <br />
+
+      <h3 class="descTitle right">Overview</h3>
+      <p class="desc right">I developed this program with Python while working in the Finnish Defence Forces. The program helped at controlling the dozens of computers we had in our classrooms. With the program we could for example update all the computers, send files/folders, start specific programs and connect the computers to a server or start a server and only connect some computers. The program saved a lot of time, because we could control the computers simultaneously and remotely. Also if something went wrong during training we could just use the remote control and solve the problems faster. 
+      <br/><br/>
+      The program is easy to use as it has a clear and intuitive GUI. I developed the program using Python and the underlying networking is done with sockets. The program can do pretty much anything, it even supports start up with Wake on LAN. Because the "backbone" of the program is stable and the client program supports remote updating, it's easy to add new functionalities. There haven't been any use case that couldn't have been implemented.</p>
+
+      <h3 class="descTitle right">Challenges</h3>
+      <p class="desc right">I learned a lot about sockets and networking in general. Getting the program to start up and login to Windows was difficult, but was able to solve this by starting the program with windows task scheduler. That would start the program behind when the computer was started up. This way I could issue commands to it, but not yet login. To login I had to issue a command that removed the password and then restart the computer. Then the computer would login straight to windows as it has no password, and the program would change the password back.</p>
+
+    </div>
+  </div>
+  
+  <div class="project">
     <h3 class="projectName">JavaScript Game</h3>
     <div class="leftCont">
       <img class="projectImg chart" id="jsGamePic" src="\Images\jsGame.png" alt="" />
