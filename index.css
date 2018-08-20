@@ -198,6 +198,9 @@ a {
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
   cursor: -webkit-zoom-in;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 3px;
 }
 
 .descTitle {

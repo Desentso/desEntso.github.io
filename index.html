@@ -37,8 +37,8 @@
   <div class="about">
 
     <h1 class="title">About</h1>
-    <p class="aboutText">I'm a software developer from Finland. I develop full-stack web apps e.g Countle.com, scripts/bots e.g the Time zone bot, and games. I am going to study Computer Science in the Aalto University from 2018. In the future I would like to build a more complex full-stack web app and learn more about game development.</p>
-    <p class="aboutTech">Languages I use</p>
+    <p class="aboutText">I'm a software developer from Finland. I develop full-stack web apps e.g Duunli.com, scripts/bots e.g the Time zone bot, and games. I am going to study Computer Science in the Aalto University from 2018. In the future I would like to build a more complex full-stack web app and learn more about game development.</p>
+    <p class="aboutTech">Languages I have used</p>
     <p class="aboutTechLangs">
       <span class="abTechLang">JavaScript</span>
       <span class="abTechLang">Python</span>
@@ -46,18 +46,21 @@
       <span class="abTechLang">SQL</span>
       <span class="abTechLang">HTML&CSS</span>
     </p>
-    <p class="aboutTech">Libraries/Frameworks I use</p>
+    <p class="aboutTech">Libraries / Frameworks I have used</p>
     <p class="aboutTechLangs">
-      <span class="abTechLang">Node.js</span>
-      <span class="abTechLang">Flask</span>
       <span class="abTechLang">React.js</span>
-      <span class="abTechLang">Regex</span>
+      <span class="abTechLang">Redux</span>
+      <span class="abTechLang">Node.js</span>
       <span class="abTechLang">PostgreSQL</span>
+      <span class="abTechLang">Django</span>
+      <span class="abTechLang">MongoDB</span>
+      <span class="abTechLang">Flask</span>
+      <span class="abTechLang">Regex</span>
     </p>
 
     <div class="profiles">
-      <a href="https://codepen.io/Desentso"><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Small.png" class="logo"></a>
       <a href="https://github.com/Desentso"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" class="logo"></a>
+      <a href="https://codepen.io/Desentso"><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Small.png" class="logo"></a>
     </div>
 
   </div>
@@ -68,6 +71,42 @@
 <div class="work">
   <h2 class="secTitle">Work</h2>
   
+  <a name="duunli"></a>
+  <div class="project">
+    <h3 class="projectName">Duunli.com - website to hire taskers</h3>
+
+    <div class="leftCont">
+      <img class="projectImg left" src="\Images\duunli-overview.png" alt="" />
+      <img class="projectImg" src="\Images\duunli-task-view.png">
+      <img class="projectImg" src="\Images\duunli-landing-view.png">
+    </div>
+
+    <div class="rightCont">
+      <h3 class="descTitle">Technologies Used</h3>
+      <div class="techBox">
+        <p class="tech">JavaScript</p>
+        <p class="tech">React</p>
+        <p class="tech">NodeJS</p>
+        <p class="tech">ExpressJS</p>
+        <p class="tech">Postgresql</p>
+        <p class="tech">HTML & CSS</p>
+      </div>
+      <br />
+      <h3 class="descTitle">Overview</h3>
+      <p class="desc"><a class="link" href="https://www.duunli.com">Duunli.com</a> is a website that anyone can use to hire taskers to do any kinds of tasks on ad-hoc basis. It makes hiring people for small tasks easier by connecting taskers and businesses or households that are looking to get small tasks done. For example features include complete account creation flow, adding a task, browsing tasks, commenting, quoting, review system, profile system, private messages, escrow payments. It's fully functional except the Stripe payments are in test mode.
+        <br><br>
+        Duunli webapp was build using JavaScript. It has a SPA React front-end and runs NodeJS with ExpressJS framework on server-side. The server has REST API which is used to communicate between the front-end and server. As a database I used Postgresql, which I think is a really solid tool. This was my first full scale React app, and it really made me fall in love with React. It just makes your life so much easier.
+        <br><br>
+        I learned a lot while developing Duunli. Everything from design to back-end was done single-handedly by me. For example how to structure a big project, how to use React in big projects. Got a lot more comfortable with my React skills and really like it as a tool a lot.
+        <br><br>
+        You can try out the website at <a class="link" href="https://www.duunli.com">https://duunli.com</a>
+      </p>
+      <br />
+      <h3 class="descTitle">Challenges</h3>
+      <p class="desc">This was my first big React app. If I started it now I would definitely use a store like Redux, it would help a lot in state managing and make the code easier to read. Other improvements for cleaner code could be made by creating even more generic/reusable components and organizing those better. There was also challenges on how to design the business logic, which turned out to be more complex than I had thought. There is always something that could be done better, but the app works and is finished, overall I'm really satisfied on how it turned out.</p>
+    </div>
+  </div>
+
   <a name="timezonebot"></a>
   <div class="project">
     <h3 class="projectName">Time zone bot for Reddit and Discord</h3>
