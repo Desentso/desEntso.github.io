@@ -16,7 +16,7 @@ window.onload = function(){
 
 		var target = e.target || e.srcElement;
 
-		if (target.nodeName === "IMG"){
+		if (target.nodeName === "IMG" && !target.className.includes("no-expand")){
 		    var imgSrc = target.src;
 
 		    document.getElementById("fullImg").src = imgSrc;

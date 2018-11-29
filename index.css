@@ -25,9 +25,7 @@ a {
 .landing {
   width: 90%;
   margin:auto;
-  //text-align: center;
   border-bottom: 1px solid rgba(0,0,0,0.1);
-
 }
 
 .headerCont {
@@ -97,7 +95,6 @@ a {
 }
 
 .aboutTechLangs {
-  font- size: 20px;
   margin-top: 15px;
 }
 
@@ -106,6 +103,10 @@ a {
   padding: 6px 10px;
   border: 2px solid #ddd;
   border-radius: 3px;
+}
+
+.abTechLang:hover {
+  background-color: #ddd;
 }
 
 .aboutText {
@@ -121,12 +122,6 @@ a {
 }
 
 
-/*.title {
-  font-size: 60px;
-  margin: 0;
-  padding-top: 300px;
-  letter-spacing: 5px;
-}*/
 
 .quote {
   font-style: italic;
@@ -173,7 +168,6 @@ a {
   margin-bottom: 0;
   font-size: 32px;
   margin-top: 70px;
-  borde r-bottom: 1px solid rgba(0,0,0,0.15);
 }
 
 .leftCont {
@@ -296,11 +290,16 @@ a {
 }
 
 #submit {
-  font-size: 20px;
+  font-size: 18px;
   margin: auto;
   margin-top: 10px;
   display: block;
-  padding: 5px 10px;
+  padding: 12px 27px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  background-color: #0075ff;
 }
 
 .error {
@@ -346,7 +345,6 @@ a {
 
 .smallProject {
   display: inline-block;
-  bor der: 1px solid black;
   width: 300px;
   margin-right: 20px;
   margin-bottom: 20px;

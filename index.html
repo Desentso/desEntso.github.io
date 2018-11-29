@@ -20,7 +20,7 @@
 <body>
 
 <div id="imgBack">
-  <img src="#" id="fullImg">
+  <img src="#" id="fullImg" />
 </div>
 
 <div class="landing">
@@ -42,9 +42,12 @@
     <p class="aboutTechLangs">
       <span class="abTechLang">JavaScript</span>
       <span class="abTechLang">Python</span>
-      <span class="abTechLang">Java</span>
+      <span class="abTechLang">Go</span>
+      <span class="abTechLang">Scala</span>
       <span class="abTechLang">SQL</span>
-      <span class="abTechLang">HTML&CSS</span>
+      <span class="abTechLang">HTML & CSS</span>
+      <span class="abTechLang">Java</span>
+      <span class="abTechLang">C</span>
     </p>
     <p class="aboutTech">Libraries / Frameworks I use</p>
     <p class="aboutTechLangs">
@@ -59,8 +62,8 @@
     </p>
 
     <div class="profiles">
-      <a href="https://github.com/Desentso"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" class="logo"></a>
-      <a href="https://codepen.io/Desentso"><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Small.png" class="logo"></a>
+      <a href="https://github.com/Desentso" class="no-expand" ><img src="https://image.flaticon.com/icons/png/512/25/25231.png" class="logo no-expand"/></a>
+      <a href="https://codepen.io/Desentso" class="no-expand" ><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Small.png" class="logo no-expand"/></a>
     </div>
 
   </div>
@@ -77,8 +80,8 @@
 
     <div class="leftCont">
       <img class="projectImg left" src="\Images\duunli-overview.png" alt="" />
-      <img class="projectImg" src="\Images\duunli-task-view.png">
-      <img class="projectImg" src="\Images\duunli-landing-view.png">
+      <img class="projectImg" src="\Images\duunli-task-view.png" />
+      <img class="projectImg" src="\Images\duunli-landing-view.png" />
     </div>
 
     <div class="rightCont">
@@ -94,16 +97,49 @@
       <br />
       <h3 class="descTitle">Overview</h3>
       <p class="desc"><a class="link" href="https://www.duunli.com">Duunli.com</a> is a website that anyone can use to hire taskers to do any kinds of tasks on ad-hoc basis. It makes hiring people for small tasks easier by connecting taskers and businesses or households that are looking to get small tasks done. For example features include complete account creation flow, adding a task, browsing tasks, commenting, quoting, review system, profile system, private messages, escrow payments. It's fully functional except the Stripe payments are in test mode.
-        <br><br>
+        <br/><br/>
         Duunli webapp was build using JavaScript. It has a SPA React front-end and runs NodeJS with ExpressJS framework on server-side. The server has REST API which is used to communicate between the front-end and server. As a database I used Postgresql, which I think is a really solid tool. This was my first full scale React app, and it really made me fall in love with React. It just makes your life so much easier.
-        <br><br>
+        <br/><br/>
         I learned a lot while developing Duunli. Everything from design to back-end was done single-handedly by me. For example how to structure a big project, how to use React in big projects. Got a lot more comfortable with my React skills and really like it as a tool a lot.
-        <br><br>
+        <br/><br/>
         You can try out the website at <a class="link" href="https://www.duunli.com">https://duunli.com</a>
       </p>
       <br />
       <h3 class="descTitle">Challenges</h3>
       <p class="desc">This was my first big React app. If I started it now I would definitely use a store like Redux, it would help a lot in state managing and make the code easier to read. Other improvements for cleaner code could be made by creating even more generic/reusable components and organizing those better. There was also challenges on how to design the business logic, which turned out to be more complex than I had thought. There is always something that could be done better, but the app works and is finished, overall I'm really satisfied on how it turned out.</p>
+    </div>
+  </div>
+
+  <a name="blockchain"></a>
+  <div class="project">
+    <h3 class="projectName">Blockchain</h3>
+
+    <div class="leftCont">
+      <img class="projectImg" src="\Images\blockchain_wallet.png" alt="" />
+      <img class="projectImg" src="\Images\blockchain_explorer.png" alt="" />
+    </div>
+
+    <div class="rightCont">
+      <h3 class="descTitle">Technologies Used</h3>
+      <div class="techBox">
+        <p class="tech">Go</p>
+        <p class="tech">React</p>
+        <p class="tech">Redux</p>
+      </div>
+      <br />
+      <h3 class="descTitle">Overview</h3>
+      <p class="desc">
+        Minimun viable blockchain/cryptocurrent built with Go. It has everything necessary for being called blockchain, peer-to-peer nodes, proof-of-work mining, block validation, transactions, transaction validation (with RSA) and wallets (with RSA keys).
+        I also built a React UI for the wallet, block explorer, and a simple control panel.
+        <br/><br/>
+        I have been interested in blockchain and cryptocurrencies for couple of years. I always thought that I knew what blockchain is and how it works. But when diving deeper into it and implementing it myself, I realised I didn't really know how it works. Now I can say with confidence that I understand how some parts of it work.
+        <br/><br/>
+
+        You can find the code from GitHub: <a href="https://github.com/Desentso/Blockchain" class="link">https://github.com/Desentso/Blockchain</a>. Everything should be runnable locally (the README will guide you), you will need to have Go and npm installed.
+      </p>
+      <br />
+      <h3 class="descTitle">Challenges</h3>
+      <p class="desc">The biggest challenges were learning and understanding how a blockchain works. This was also the first time I used Go in a bigger project.</p>
     </div>
   </div>
 
@@ -125,13 +161,13 @@
       <br />
       <h3 class="descTitle">Overview</h3>
       <p class="desc">The Time zone bot is a bot that automatically searches for posts and comments in the Reddit looking for times with time zone information. The time zone bot then calculates how many hours and minutes until the time happens and posts this to the Reddit. It also uses the <a href="#countle" class="link">Countle</a> API to create a countdown.
-        <br>
-        <br>
+        <br/>
+        <br/>
         The Time zone Bot uses the Reddit API to get new posts and comments. First it filters the posts by e.g too long, posted by another bot. After that it uses regex to find common time formats with time zone info. Then it tries to determine the tense of the comment/post and search for dates and keywords, to make sure that the time happens in the future/present and not in the past. If everything passes the bot sends the comment.
 
-        <br><br>
+        <br/><br/>
         The time zone bot has got very positive feedback from the users on Reddit. <i>"Best bot on Reddit! Thank you so much", "This is my favourite bot", "This bot needs to appear on every thread", "a useful bot, I like this"</i>
-        <br><br>
+        <br/><br/>
         You can find the code from GitHub: <a href="https://github.com/Desentso/TimezoneBotReddit" class="link">https://github.com/Desentso/TimezoneBotReddit</a> and the /u/timezone_bot here: <a href="https://reddit.com/u/timezone_bot" class="link">https://reddit.com/u/timezone_bot</a>
       </p>
       <br />
@@ -145,7 +181,7 @@
     <h3 class="projectName">Countle.com</h3>
     <div class="leftCont">
       <img class="projectImg left" src="\Images\countle.png" alt="" />
-      <img class="projectImg" src="\Images\countle2.png">
+      <img class="projectImg" src="\Images\countle2.png" />
     </div>
 
     <div class="rightCont">
@@ -159,11 +195,11 @@
       <br />
       <h3 class="descTitle right">Overview</h3>
       <p class="desc right"><a href="https://countle.com" class="link">Countle</a> is a countdown website. What makes Countle special is that you can just enter the date string you found from other website or social media and Countle automatically creates a countdown from that.
-        <br>
-        <br>
+        <br/>
+        <br/>
         Originally Countle was created for <a href="#timezonebot" class="link">the Time zone bot</a> to host the countdowns it generated, because of that Countle also has an API that can be used to create and retrieve countdowns.
-        <br>
-        <br>
+        <br/>
+        <br/>
         Countle.com gets over 150,000 pageviews a month. Most of the traffic comes from the Time zone bot.
       </p>
       <br />
@@ -172,11 +208,11 @@
     </div>
   </div>
   
+  <a name="python-remote"></a>
   <div class="project">
-
     <h3 class="projectName">Python remote control program</h3>
     <div class="leftCont">
-      <img class="projectImg" src="\Images\py2.png">
+      <img class="projectImg" src="\Images\py2.png"/>
     </div>
 
     <div class="rightCont">
@@ -197,6 +233,7 @@
     </div>
   </div>
   
+  <a name="js-game"></a>
   <div class="project">
     <h3 class="projectName">JavaScript Game</h3>
     <div class="leftCont">
@@ -211,11 +248,11 @@
       <br />
       <h3 class="descTitle right">Overview</h3>
       <p class="desc right">The game is created with pure Javascript. It is inspired by a popular mobile game called "BBTAN". The game is never-ending. Your goal is to clear the boxes and not let them hit the bottom. The boxes have hit points, when you hit a box with a ball the hit points go down by one, the box disappears when its hit points go to zero. You start with one ball, but can get more balls by hitting the little balls with a plus sign. When all balls have exited through the bottom a new round starts. At the start of a new round, a new row of boxes appears. As the game goes on the new round of boxes gets more hit points. You score a point when you survive one round.
-        <br>
-        <br>
+        <br/>
+        <br/>
         You can play the game here: <a href="\jsGame.html" class="link">https://desentso.github.io/jsGame.html</a>
         
-        <br><br>
+        <br/><br/>
         You can find the code from Github <a href="https://github.com/Desentso/JavaScriptGame" class="link">https://github.com/Desentso/JavaScriptGame</a>
       </p>
       <br />
@@ -225,11 +262,11 @@
     </div>
   </div>
 
-  <div class="project">
+  <!--<div class="project">
     <h3 class="projectName">Fovents.com</h3>
     <div class="leftCont">
       <img class="projectImg left" src="\Images\fovents.png" alt="" />
-      <img class="projectImg" src="\Images\fovents2.png">
+      <img class="projectImg" src="\Images\fovents2.png" />
     </div>
 
     <div class="rightCont">
@@ -244,9 +281,9 @@
       <br />
       <h3 class="descTitle right">Overview</h3>
       <p class="desc right">Fovents is a website for foodtrucks. Fovents uses many event API's and combines the relevant results. The user can search the events by their location, radius,  date and category. They can also move to a place on a map and search on a certain radius. The events are displayed on a map. The user can also save events for later retrieving. 
-        <br><br>
+        <br/><br/>
         The backend is created with Python using the Flask framework. SQLite3 is used to store user information, like account data and saved events. The server and client communicates with an API. 
-      <br><br>
+        <br/><br/>
         You can find the code from here <a class="link" href="https://github.com/Desentso/Fovents">https://github.com/Desentso/Fovents</a>
       </p>
       <br />
@@ -259,7 +296,7 @@
     <h3 class="projectName">UnitedLoL</h3>
     <div class="leftCont">
       <img class="projectImg left" src="\Images\unitedLol.png" alt="" />
-      <img class="projectImg" src="\Images\unitedLol2.png">
+      <img class="projectImg" src="\Images\unitedLol2.png" />
     </div>
 
     <div class="rightCont">
@@ -273,16 +310,16 @@
       <br />
       <h3 class="descTitle right">Overview</h3>
       <p class="desc right">UnitedLoL is a website for League Of Legends players that are looking for people to play with. It matches people that are looking for a group with people that already have a group (atleast 2 players). It has a simple queue system that automatically matches people to a group in time order. If you were the first one looking for group, you will be the first one to get matched.
-        <br><br>
+        <br/><br/>
         The app uses web sockets, socket.io as a framework. Sockets in this case reduces server-load and makes the user experience smoother and faster. You instantly get notified when you get matched, if it used Ajax calls there would be bigger delay. The backend is coded with Node.js and socket.io.
-      <br><br>
-      You can find the code from Github <a href="https://github.com/Desentso/UnitedLoL" class="link">https://github.com/Desentso/UnitedLoL</a>
+        <br/><br/>
+        You can find the code from Github <a href="https://github.com/Desentso/UnitedLoL" class="link">https://github.com/Desentso/UnitedLoL</a>
       </p>
       <br />
       <h3 class="descTitle right">Challenges</h3>
       <p class="desc right">First time working with sockets, so I had to study them a bit. Socket.io helped a lot with the sockets but it was still a new concept and a tool I had to learn.</p>
     </div>
-  </div>
+  </div> -->
 
   <div class="project">
     <h3 class="projectName">BlackJack</h3>
@@ -298,7 +335,7 @@
       <br />
       <h3 class="descTitle right">Overview</h3>
       <p class="desc right">The game works just like any other Blackjack game. It allows betting. The game uses 4 decks and shows unique cards.
-        <br><br>
+        <br/><br/>
         It's coded with Java and uses object-oriented programming.
         You can find the code from Github: <a class="link" href="https://github.com/Desentso/Blackjack">https://github.com/Desentso/Blackjack</a>
       </p>
@@ -315,55 +352,55 @@
 
       <a href="https://codepen.io/Desentso/full/JdvQza/"><div class="smallProject">
         <h4 class="smallPTitle">Egg Timer</h4>
-        <img src="\Images\eggtimer.png" class="smallImg">
+        <img src="\Images\eggtimer.png" class="smallImg" />
       </div></a>
 
       <a href="https://codepen.io/Desentso/full/mJKzXM/"><div class="smallProject">
         <h4 class="smallPTitle">Calculator</h4>
-        <img src="\Images\calc.png" class="smallImg">
+        <img src="\Images\calc.png" class="smallImg" />
       </div></a>
 
       <a href="https://codepen.io/Desentso/full/pJVOMQ/"><div class="smallProject">
         <h4 class="smallPTitle">Wikipedia Searcher</h4>
-        <img src="\Images\wpSearcher.png" class="smallImg">
+        <img src="\Images\wpSearcher.png" class="smallImg" />
       </div></a>
 
       <a href="https://codepen.io/Desentso/full/wgwgKQ/"><div class="smallProject">
         <h4 class="smallPTitle">Firework Animation</h4>
-        <img src="\Images\firework.png" class="smallImg">
+        <img src="\Images\firework.png" class="smallImg" />
       </div></a>
 
       <a href="https://codepen.io/Desentso/full/jWqZPO/"><div class="smallProject">
         <h4 class="smallPTitle">BlackJack</h4>
-        <img src="\Images\blackjackJS.png" class="smallImg">
+        <img src="\Images\blackjackJS.png" class="smallImg" />
       </div></a>
 
       <a href="https://codepen.io/Desentso/full/NbpQOL/"><div class="smallProject">
         <h4 class="smallPTitle">Ball Bounce Animation</h4>
-        <img src="\Images\ballbounce.png" class="smallImg">
+        <img src="\Images\ballbounce.png" class="smallImg" />
       </div></a>
 
       <a href="https://codepen.io/Desentso/full/PzxENP/"><div class="smallProject">
         <h4 class="smallPTitle">Grid UI</h4>
-        <img src="\Images\gridui.png" class="smallImg">
+        <img src="\Images\gridui.png" class="smallImg" />
       </div></a>
 
 
       <h3 class="projectName">Python Scripts/Bots</h3>
       <p class="desc">I have built many Python scripts and bots, but mostly for my own use. Here are some that could be useful for public use. </p>
-      <br><br>
+      <br/><br/>
 
       <a href="https://github.com/Desentso/TwitterBots">
         <div class="smallProject">
           <h4 class="smallPTitle">Twitter Scripts/Bots</h4>
-          <img src="\Images\PythonLogo.png" class="smallImg">
+          <img src="\Images\PythonLogo.png" class="smallImg" />
         </div>
       </a>
 
       <a href="https://github.com/Desentso/WebScrapers">
         <div class="smallProject">
           <h4 class="smallPTitle">Web Scrapers</h4>
-          <img src="\Images\PythonLogo.png" class="smallImg">
+          <img src="\Images\PythonLogo.png" class="smallImg" />
         </div>
       </a>
 
@@ -380,22 +417,22 @@
   <form class="form" method="POST" action="https://formspree.io/desentsobusiness@gmail.com">
 
     <label class="label">Name</label>
-    <input class="input" type="text" name="name" id="name">
+    <input class="input" type="text" name="name" id="name"/>
     <div id="nameerr" class="error">Name is required</div>
 
     <label class="label">E-mail</label>
-    <input class="input" type="email" name="email" id="email" required>
+    <input class="input" type="email" name="email" id="email" required />
     <div id="emailerr" class="error">Name is required</div>
 
     <label class="label">Subject</label>
-    <input class="input" type="text" name="subject" id="subject">
+    <input class="input" type="text" name="subject" id="subject"/>
     <div id="subjecterr" class="error">Name is required</div>
 
     <label class="label">Message</label>
     <textarea id="message" name="message" required></textarea>
     <div id="messageerr" class="error">Name is required</div>
 
-    <input type="submit" value="Send" id="submit">
+    <input type="submit" value="Send" id="submit"/>
 
   </form>
 
