@@ -100,9 +100,11 @@ a {
 
 .abTechLang {
   margin-right: 16px;
+  margin-bottom: 16px;
   padding: 6px 10px;
   border: 2px solid #ddd;
   border-radius: 3px;
+  display: inline-block;
 }
 
 .abTechLang:hover {

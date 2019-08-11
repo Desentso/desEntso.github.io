@@ -5,7 +5,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100547110-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-100547110-2');
@@ -17,305 +17,442 @@
   <link href="index.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="index.js"></script>
 </head>
+
 <body>
 
-<div id="imgBack">
-  <img src="#" id="fullImg" />
-</div>
-
-<div class="landing">
-  
-  <div class="headerCont">
-    <ul class="header">
-      <li class="headerItem"><a href="#about">ABOUT</a></li>
-      <li class="headerItem"><a href="#work">WORK</a></li>
-      <li class="headerItem"><a href="#contact">CONTACT</a></li>
-    </ul>
+  <div id="imgBack">
+    <img src="#" id="fullImg" />
   </div>
 
-  <a name="about"></a>
-  <div class="about">
+  <div class="landing">
 
-    <h1 class="title">About</h1>
-    <p class="aboutText">I'm a software engineer from Finland. I develop full-stack web apps e.g Duunli.com, scripts/bots e.g the Time zone bot, and games. I am also studying Computer Science at the Aalto University. In the future I would like to build a more complex full-stack web app and learn more about game development.</p>
-    <p class="aboutTech">Languages I use</p>
-    <p class="aboutTechLangs">
-      <span class="abTechLang">JavaScript</span>
-      <span class="abTechLang">Python</span>
-      <span class="abTechLang">Go</span>
-      <span class="abTechLang">Scala</span>
-      <span class="abTechLang">SQL</span>
-      <span class="abTechLang">HTML & CSS</span>
-      <span class="abTechLang">Java</span>
-      <span class="abTechLang">C</span>
-    </p>
-    <p class="aboutTech">Libraries / Frameworks I use</p>
-    <p class="aboutTechLangs">
-      <span class="abTechLang">React.js</span>
-      <span class="abTechLang">Redux</span>
-      <span class="abTechLang">Node.js</span>
-      <span class="abTechLang">PostgreSQL</span>
-      <span class="abTechLang">Django</span>
-      <span class="abTechLang">MongoDB</span>
-      <span class="abTechLang">Flask</span>
-      <span class="abTechLang">Regex</span>
-    </p>
-
-    <div class="profiles">
-      <a href="https://github.com/Desentso" class="no-expand" ><img src="https://image.flaticon.com/icons/png/512/25/25231.png" class="logo no-expand"/></a>
-      <a href="https://codepen.io/Desentso" class="no-expand" ><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Small.png" class="logo no-expand"/></a>
+    <div class="headerCont">
+      <ul class="header">
+        <li class="headerItem"><a href="#about">ABOUT</a></li>
+        <li class="headerItem"><a href="#work">WORK</a></li>
+        <li class="headerItem"><a href="#contact">CONTACT</a></li>
+      </ul>
     </div>
 
-  </div>
+    <a name="about"></a>
+    <div class="about">
 
-</div>
-
-<a name="work"></a>
-<div class="work">
-  <h2 class="secTitle">Work</h2>
-  
-  <a name="duunli"></a>
-  <div class="project">
-    <h3 class="projectName">Duunli.com - website to hire taskers</h3>
-
-    <div class="leftCont">
-      <img class="projectImg left" src="\Images\duunli-overview.png" alt="" />
-      <img class="projectImg" src="\Images\duunli-task-view.png" />
-      <img class="projectImg" src="\Images\duunli-landing-view.png" />
-    </div>
-
-    <div class="rightCont">
-      <h3 class="descTitle">Technologies Used</h3>
-      <div class="techBox">
-        <p class="tech">JavaScript</p>
-        <p class="tech">React</p>
-        <p class="tech">NodeJS</p>
-        <p class="tech">ExpressJS</p>
-        <p class="tech">Postgresql</p>
-        <p class="tech">HTML & CSS</p>
+      <h1 class="title">About</h1>
+      <p class="aboutText">I'm a software engineer from Finland. I develop full-stack web apps e.g Duunli.com,
+        scripts/bots e.g the Time zone bot, and games. I am also studying Computer Science at the Aalto University. In
+        the future I would like to build a more complex full-stack web app and learn more about game development.</p>
+      <p class="aboutTech">Languages I use</p>
+      <div class="aboutTechLangs">
+        <span class="abTechLang">JavaScript</span>
+        <span class="abTechLang">Python</span>
+        <span class="abTechLang">Go</span>
+        <span class="abTechLang">Scala</span>
+        <span class="abTechLang">SQL</span>
+        <span class="abTechLang">HTML & CSS</span>
+        <span class="abTechLang">Java</span>
+        <span class="abTechLang">C</span>
       </div>
-      <br />
-      <h3 class="descTitle">Overview</h3>
-      <p class="desc"><a class="link" href="https://www.duunli.com">Duunli.com</a> is a website that anyone can use to hire taskers to do any kinds of tasks on ad-hoc basis. It makes hiring people for small tasks easier by connecting taskers and businesses or households that are looking to get small tasks done. For example features include complete account creation flow, adding a task, browsing tasks, commenting, quoting, review system, profile system, private messages, escrow payments. It's fully functional except the Stripe payments are in test mode.
-        <br/><br/>
-        Duunli webapp was build using JavaScript. It has a SPA React front-end and runs NodeJS with ExpressJS framework on server-side. The server has REST API which is used to communicate between the front-end and server. As a database I used Postgresql, which I think is a really solid tool. This was my first full scale React app, and it really made me fall in love with React. It just makes your life so much easier.
-        <br/><br/>
-        I learned a lot while developing Duunli. Everything from design to back-end was done single-handedly by me. For example how to structure a big project, how to use React in big projects. Got a lot more comfortable with my React skills and really like it as a tool a lot.
-        <br/><br/>
-        You can try out the website at <a class="link" href="https://www.duunli.com">https://duunli.com</a>
-      </p>
-      <br />
-      <h3 class="descTitle">Challenges</h3>
-      <p class="desc">This was my first big React app. If I started it now I would definitely use a store like Redux, it would help a lot in state managing and make the code easier to read. Other improvements for cleaner code could be made by creating even more generic/reusable components and organizing those better. There was also challenges on how to design the business logic, which turned out to be more complex than I had thought. There is always something that could be done better, but the app works and is finished, overall I'm really satisfied on how it turned out.</p>
-    </div>
-  </div>
-
-  <a name="blockchain"></a>
-  <div class="project">
-    <h3 class="projectName">Blockchain</h3>
-
-    <div class="leftCont">
-      <img class="projectImg" src="\Images\blockchain_wallet.PNG" alt="" />
-      <img class="projectImg" src="\Images\blockchain_explorer.PNG" alt="" />
-    </div>
-
-    <div class="rightCont">
-      <h3 class="descTitle">Technologies Used</h3>
-      <div class="techBox">
-        <p class="tech">Go</p>
-        <p class="tech">React</p>
-        <p class="tech">Redux</p>
+      <p class="aboutTech">Libraries / Frameworks I use</p>
+      <div class="aboutTechLangs">
+        <span class="abTechLang">React.js</span>
+        <span class="abTechLang">Redux</span>
+        <span class="abTechLang">Redux Saga</span>
+        <span class="abTechLang">Node.js</span>
+        <span class="abTechLang">PostgreSQL</span>
+        <span class="abTechLang">Django</span>
+        <span class="abTechLang">MongoDB</span>
+        <span class="abTechLang">Flask</span>
+        <span class="abTechLang">Redis</span>
+        <span class="abTechLang">InfluxDB</span>
+        <span class="abTechLang">Regex</span>
       </div>
-      <br />
-      <h3 class="descTitle">Overview</h3>
-      <p class="desc">
-        Minimun viable blockchain/cryptocurrent built with Go. It has everything necessary for being called blockchain, peer-to-peer nodes, proof-of-work mining, block validation, transactions, transaction validation (with RSA) and wallets (with RSA keys).
-        I also built a React UI for the wallet, block explorer, and a simple control panel.
-        <br/><br/>
-        I have been interested in blockchain and cryptocurrencies for couple of years. I always thought that I knew what blockchain is and how it works. But when diving deeper into it and implementing it myself, I realised I didn't really know how it works. Now I can say with confidence that I understand how some parts of it work.
-        <br/><br/>
 
-        You can find the code from GitHub: <a href="https://github.com/Desentso/Blockchain" class="link">https://github.com/Desentso/Blockchain</a>. Everything should be runnable locally (the README will guide you), you will need to have Go and npm installed.
-      </p>
-      <br />
-      <h3 class="descTitle">Challenges</h3>
-      <p class="desc">The biggest challenges were learning and understanding how a blockchain works. This was also the first time I used Go in a bigger project.</p>
-    </div>
-  </div>
-
-  <a name="timezonebot"></a>
-  <div class="project">
-    <h3 class="projectName">Time zone bot for Reddit and Discord</h3>
-
-    <div class="leftCont">
-      <img class="projectImg chart" src="\Images\timezonebotChart.png" alt="" />
-    </div>
-
-    <div class="rightCont">
-      <h3 class="descTitle">Technologies Used</h3>
-      <div class="techBox">
-        <p class="tech">Python</p>
-        <p class="tech">Regex</p>
-        <p class="tech">Reddit API</p>
+      <div class="profiles">
+        <a href="https://github.com/Desentso" class="no-expand"><img
+            src="https://image.flaticon.com/icons/png/512/25/25231.png" class="logo no-expand" /></a>
       </div>
-      <br />
-      <h3 class="descTitle">Overview</h3>
-      <p class="desc">The Time zone bot is a bot that automatically searches for posts and comments in the Reddit looking for times with time zone information. The time zone bot then calculates how many hours and minutes until the time happens and posts this to the Reddit. It also uses the <a href="#countle" class="link">Countle</a> API to create a countdown.
-        <br/>
-        <br/>
-        The Time zone Bot uses the Reddit API to get new posts and comments. First it filters the posts by e.g too long, posted by another bot. After that it uses regex to find common time formats with time zone info. Then it tries to determine the tense of the comment/post and search for dates and keywords, to make sure that the time happens in the future/present and not in the past. If everything passes the bot sends the comment.
 
-        <br/><br/>
-        The time zone bot has got very positive feedback from the users on Reddit. <i>"Best bot on Reddit! Thank you so much", "This is my favourite bot", "This bot needs to appear on every thread", "a useful bot, I like this"</i>
-        <br/><br/>
-        You can find the code from GitHub: <a href="https://github.com/Desentso/TimezoneBotReddit" class="link">https://github.com/Desentso/TimezoneBotReddit</a> and the /u/timezone_bot here: <a href="https://reddit.com/u/timezone_bot" class="link">https://reddit.com/u/timezone_bot</a>
-      </p>
-      <br />
-      <h3 class="descTitle">Challenges</h3>
-      <p class="desc">It was hard to make sure that the time happens in the future and not in the past. This was solved by searching for dates and keywords. Later I found a way to analyze the sentences tense, (past, present, future). Using these together reduced the false positives a lot.</p>
     </div>
+
   </div>
 
-  <a name="countle"></a>
-  <div class="project">
-    <h3 class="projectName">Countle.com</h3>
-    <div class="leftCont">
-      <img class="projectImg left" src="\Images\countle.png" alt="" />
-      <img class="projectImg" src="\Images\countle2.png" />
-    </div>
+  <a name="work"></a>
+  <div class="work">
+    <h2 class="secTitle">Work</h2>
 
-    <div class="rightCont">
-      <h3 class="descTitle right">Technologies Used</h3>
-      <div class="techBox">
-        <p class="tech">HTML & CSS</p>
-        <p class="tech">JavaScript</p>
-        <p class="tech">Node.js</p>
-        <p class="tech">SQL (PostgreSQL)</p>
+    <a name="ruoanhinta"></a>
+    <div class="project">
+      <h3 class="projectName">Ruoanhinta.fi - webapp to find the cheapest grocery store</h3>
+
+      <div class="leftCont">
+        <img class="projectImg" src="\Images\ruoanhintaSearch.png" />
+        <img class="projectImg" src="\Images\ruoanhintaResults.png" />
+        <img class="projectImg" src="\Images\ruoanhintaMap.png" />
       </div>
-      <br />
-      <h3 class="descTitle right">Overview</h3>
-      <p class="desc right"><a href="https://countle.com" class="link">Countle</a> is a countdown website. What makes Countle special is that you can just enter the date string you found from other website or social media and Countle automatically creates a countdown from that.
-        <br/>
-        <br/>
-        Originally Countle was created for <a href="#timezonebot" class="link">the Time zone bot</a> to host the countdowns it generated, because of that Countle also has an API that can be used to create and retrieve countdowns.
-        <br/>
-        <br/>
-        Countle.com gets over 150,000 pageviews a month. Most of the traffic comes from the Time zone bot.
-      </p>
-      <br />
-      <h3 class="descTitle right">Challenges</h3>
-      <p class="desc right">Node.js requires asynchronous programming as it only has one instance for the server. It was at first hard to get used to it and required quite a lot of studying about node.js and asynchronous programming in general.</p>
-    </div>
-  </div>
-  
-  <a name="python-remote"></a>
-  <div class="project">
-    <h3 class="projectName">Python remote control program</h3>
-    <div class="leftCont">
-      <img class="projectImg" src="\Images\py2.png"/>
-    </div>
 
-    <div class="rightCont">
-      <h3 class="descTitle right">Technologies Used</h3>
-      <div class="techBox">
-        <p class="tech">Python</p>
+      <div class="rightCont">
+        <h3 class="descTitle">Technologies Used</h3>
+        <div class="techBox">
+          <p class="tech">JavaScript</p>
+          <p class="tech">React</p>
+          <p class="tech">Redux</p>
+          <p class="tech">NodeJS</p>
+          <p class="tech">ExpressJS</p>
+          <p class="tech">Redis</p>
+          <p class="tech">InfluxDB</p>
+          <p class="tech">HTML & CSS</p>
+        </div>
+        <br />
+        <h3 class="descTitle">Overview</h3>
+        <p class="desc"><a class="link" href="https://ruoanhinta.fi/?lang=en">Ruoanhinta.fi</a> is a webapp that 
+          anyone can use to compare the prices of grocery stores, and ultimately find the cheapest store.
+          <br /><br />
+          The front-end was built using React, Redux and Redux-saga. It's a SPA, responsive and user-friendly. 
+          The main part of the application is fairly simple search and select kind of view.
+          The front-end also has a cool map view, where the user can easily see the closests stores and their prices.
+          It also helps to discover new stores which you might not realize exist or search for. 
+          There is also a view to see historical prices, and compare stores between each other, over different periods of time.
+
+          <br /><br />
+
+          The back-end is a NodeJS/ExpressJS app, that exposes API endpoints that the front-end uses to query the data.
+          Redis is used to cache requests for everything between an hour (prices) to couple days (stores). As some data can change
+          often e.g. the prices of products, but something like stores and their locations hardly ever change. Caching both
+          reduces the load on external servers, and also makes the responses much faster. InfluxDB
+          is used to store historical prices and other time-series statistics. InfluxDB is specially developed to store time-series data,
+          such as price changes over time. It makes querying that data much faster than typical databases (e.g. Postgresql). 
+          Historical data is also fun to look at, but it also has research and market/financial analysis use cases.
+          
+          <br /><br />
+
+          I learned a lot new about time-series data and how to store it optimately. Also learned more about how to make servers
+          more performant. In this specific case using caching was a great choice. Also utilizing the existing time-series data for
+          queries helped making responses faster.
+          <br /><br />
+          You can try out the website at <a class="link" href="https://ruoanhinta.fi/?lang=en">ruoanhinta.fi</a>
+        </p>
+        <br />
+        <h3 class="descTitle">Challenges</h3>
+        <p class="desc">InfluxDB was totally new for me, so learning it properly took some time. It was very rewarding
+          experience though, and helped to speed up the app a lot. The map view was a bit problematic, if the user zooms out a lot
+          the app will query and render all the stores in that area, so if there a thousands of stores rendering will take some time and
+          slow down rest of the UI. To solve that the rendering should maybe happen in a web worker or something, but implementing that is still
+          work in progress.
+        </p>
       </div>
-      <br />
-
-      <h3 class="descTitle right">Overview</h3>
-      <p class="desc right">I developed this program with Python while working in the Finnish Defence Forces. The program helped at controlling the dozens of computers we had in our classrooms. With the program we could for example update all the computers, send files/folders, start specific programs and connect the computers to a server or start a server and only connect some computers. The program saved a lot of time, because we could control the computers simultaneously and remotely. Also if something went wrong during training we could just use the remote control and solve the problems faster. 
-      <br/><br/>
-      The program is easy to use as it has a clear and intuitive GUI. I developed the program using Python and the underlying networking is done with sockets. The program can do pretty much anything, it even supports start up with Wake on LAN. Because the "backbone" of the program is stable and the client program supports remote updating, it's easy to add new functionalities. There haven't been any use case that couldn't have been implemented.</p>
-
-      <h3 class="descTitle right">Challenges</h3>
-      <p class="desc right">I learned a lot about sockets and networking in general. Getting the program to start up and login to Windows was difficult, but was able to solve this by starting the program with windows task scheduler. That would start the program behind when the computer was started up. This way I could issue commands to it, but not yet login. To login I had to issue a command that removed the password and then restart the computer. Then the computer would login straight to windows as it has no password, and the program would change the password back.</p>
-
-    </div>
-  </div>
-  
-  <a name="js-game"></a>
-  <div class="project">
-    <h3 class="projectName">JavaScript Game</h3>
-    <div class="leftCont">
-      <img class="projectImg chart" id="jsGamePic" src="\Images\jsGame.png" alt="" />
     </div>
 
-    <div class="rightCont">
-      <h3 class="descTitle right">Technologies Used</h3>
-      <div class="techBox">
-        <p class="tech">JavaScript</p>
+    <a name="duunli"></a>
+    <div class="project">
+      <h3 class="projectName">Duunli.com - website to hire taskers</h3>
+
+      <div class="leftCont">
+        <img class="projectImg left" src="\Images\duunli-overview.png" alt="" />
+        <img class="projectImg" src="\Images\duunli-task-view.png" />
+        <img class="projectImg" src="\Images\duunli-landing-view.png" />
       </div>
-      <br />
-      <h3 class="descTitle right">Overview</h3>
-      <p class="desc right">The game is created with pure Javascript. It is inspired by a popular mobile game called "BBTAN". The game is never-ending. Your goal is to clear the boxes and not let them hit the bottom. The boxes have hit points, when you hit a box with a ball the hit points go down by one, the box disappears when its hit points go to zero. You start with one ball, but can get more balls by hitting the little balls with a plus sign. When all balls have exited through the bottom a new round starts. At the start of a new round, a new row of boxes appears. As the game goes on the new round of boxes gets more hit points. You score a point when you survive one round.
-        <br/>
-        <br/>
-        You can play the game here: <a href="\jsGame.html" class="link">https://desentso.github.io/jsGame.html</a>
-        
-        <br/><br/>
-        You can find the code from Github <a href="https://github.com/Desentso/JavaScriptGame" class="link">https://github.com/Desentso/JavaScriptGame</a>
-      </p>
-      <br />
-      <h3 class="descTitle right">Challenges</h3>
-      <p class="desc right">Creating a good collision-detection was surprisingly difficult. After reading more about the concept and tutorials I got it somewhat working, although it still has some weird bugs when the balls hit the boxes in specific angles and corners.</p>
-      <p class="desc right">I made some poor design choices at the start which made it really hard to update features and debug e.g collision-detection. </p>
-    </div>
-  </div>
 
-  <div class="project">
-    <h3 class="projectName">BlackJack</h3>
-    <div class="leftCont">
-      <img class="projectImg left" src="\Images\blackjack.png" alt="" />
-    </div>
-
-    <div class="rightCont">
-      <h3 class="descTitle right">Technologies Used</h3>
-      <div class="techBox">
-        <p class="tech">Java</p>
+      <div class="rightCont">
+        <h3 class="descTitle">Technologies Used</h3>
+        <div class="techBox">
+          <p class="tech">JavaScript</p>
+          <p class="tech">React</p>
+          <p class="tech">NodeJS</p>
+          <p class="tech">ExpressJS</p>
+          <p class="tech">Postgresql</p>
+          <p class="tech">HTML & CSS</p>
+        </div>
+        <br />
+        <h3 class="descTitle">Overview</h3>
+        <p class="desc"><a class="link" href="https://www.duunli.com">Duunli.com</a> is a website that anyone can use to
+          hire taskers to do any kinds of tasks on ad-hoc basis. It makes hiring people for small tasks easier by
+          connecting taskers and businesses or households that are looking to get small tasks done. For example features
+          include complete account creation flow, adding a task, browsing tasks, commenting, quoting, review system,
+          profile system, private messages, escrow payments. It's fully functional except the Stripe payments are in
+          test mode.
+          <br /><br />
+          Duunli webapp was build using JavaScript. It has a SPA React front-end and runs NodeJS with ExpressJS
+          framework on server-side. The server has REST API which is used to communicate between the front-end and
+          server. As a database I used Postgresql, which I think is a really solid tool. This was my first full scale
+          React app, and it really made me fall in love with React. It just makes your life so much easier.
+          <br /><br />
+          I learned a lot while developing Duunli. Everything from design to back-end was done single-handedly by me.
+          For example how to structure a big project, how to use React in big projects. Got a lot more comfortable with
+          my React skills and really like it as a tool a lot.
+          <br /><br />
+          You can try out the website at <a class="link" href="https://www.duunli.com">https://duunli.com</a>
+        </p>
+        <br />
+        <h3 class="descTitle">Challenges</h3>
+        <p class="desc">This was my first big React app. If I started it now I would definitely use a store like Redux,
+          it would help a lot in state managing and make the code easier to read. Other improvements for cleaner code
+          could be made by creating even more generic/reusable components and organizing those better. There was also
+          challenges on how to design the business logic, which turned out to be more complex than I had thought. There
+          is always something that could be done better, but the app works and is finished, overall I'm really satisfied
+          on how it turned out.</p>
       </div>
-      <br />
-      <h3 class="descTitle right">Overview</h3>
-      <p class="desc right">The game works just like any other Blackjack game. It allows betting. The game uses 4 decks and shows unique cards.
-        <br/><br/>
-        It's coded with Java and uses object-oriented programming.
-        You can find the code from Github: <a class="link" href="https://github.com/Desentso/Blackjack">https://github.com/Desentso/Blackjack</a>
-      </p>
-      <br />
-      <h3 class="descTitle right">Challenges</h3>
-      <p class="desc right">First time I created a game with Java so getting everything right was challenging. Making the GUI was maybe the most challenging part, also the game flow and displaying all the right information to player.</p>
     </div>
+
+    <a name="blockchain"></a>
+    <div class="project">
+      <h3 class="projectName">Blockchain</h3>
+
+      <div class="leftCont">
+        <img class="projectImg" src="\Images\blockchain_wallet.PNG" alt="" />
+        <img class="projectImg" src="\Images\blockchain_explorer.PNG" alt="" />
+      </div>
+
+      <div class="rightCont">
+        <h3 class="descTitle">Technologies Used</h3>
+        <div class="techBox">
+          <p class="tech">Go</p>
+          <p class="tech">React</p>
+          <p class="tech">Redux</p>
+        </div>
+        <br />
+        <h3 class="descTitle">Overview</h3>
+        <p class="desc">
+          Minimun viable blockchain/cryptocurrent built with Go. It has everything necessary for being called
+          blockchain, peer-to-peer nodes, proof-of-work mining, block validation, transactions, transaction validation
+          (with RSA) and wallets (with RSA keys).
+          I also built a React UI for the wallet, block explorer, and a simple control panel.
+          <br /><br />
+          I have been interested in blockchain and cryptocurrencies for couple of years. I always thought that I knew
+          what blockchain is and how it works. But when diving deeper into it and implementing it myself, I realised I
+          didn't really know how it works. Now I can say with confidence that I understand how some parts of it work.
+          <br /><br />
+
+          You can find the code from GitHub: <a href="https://github.com/Desentso/Blockchain"
+            class="link">https://github.com/Desentso/Blockchain</a>. Everything should be runnable locally (the README
+          will guide you), you will need to have Go and npm installed.
+        </p>
+        <br />
+        <h3 class="descTitle">Challenges</h3>
+        <p class="desc">The biggest challenges were learning and understanding how a blockchain works. This was also the
+          first time I used Go in a bigger project.</p>
+      </div>
+    </div>
+
+    <a name="timezonebot"></a>
+    <div class="project">
+      <h3 class="projectName">Time zone bot for Reddit and Discord</h3>
+
+      <div class="leftCont">
+        <img class="projectImg chart" src="\Images\timezonebotChart.png" alt="" />
+      </div>
+
+      <div class="rightCont">
+        <h3 class="descTitle">Technologies Used</h3>
+        <div class="techBox">
+          <p class="tech">Python</p>
+          <p class="tech">Regex</p>
+          <p class="tech">Reddit API</p>
+        </div>
+        <br />
+        <h3 class="descTitle">Overview</h3>
+        <p class="desc">The Time zone bot is a bot that automatically searches for posts and comments in the Reddit
+          looking for times with time zone information. The time zone bot then calculates how many hours and minutes
+          until the time happens and posts this to the Reddit. It also uses the <a href="#countle"
+            class="link">Countle</a> API to create a countdown.
+          <br />
+          <br />
+          The Time zone Bot uses the Reddit API to get new posts and comments. First it filters the posts by e.g too
+          long, posted by another bot. After that it uses regex to find common time formats with time zone info. Then it
+          tries to determine the tense of the comment/post and search for dates and keywords, to make sure that the time
+          happens in the future/present and not in the past. If everything passes the bot sends the comment.
+
+          <br /><br />
+          The time zone bot has got very positive feedback from the users on Reddit. <i>"Best bot on Reddit! Thank you
+            so much", "This is my favourite bot", "This bot needs to appear on every thread", "a useful bot, I like
+            this"</i>
+          <br /><br />
+          You can find the code from GitHub: <a href="https://github.com/Desentso/TimezoneBotReddit"
+            class="link">https://github.com/Desentso/TimezoneBotReddit</a> and the /u/timezone_bot here: <a
+            href="https://reddit.com/u/timezone_bot" class="link">https://reddit.com/u/timezone_bot</a>
+        </p>
+        <br />
+        <h3 class="descTitle">Challenges</h3>
+        <p class="desc">It was hard to make sure that the time happens in the future and not in the past. This was
+          solved by searching for dates and keywords. Later I found a way to analyze the sentences tense, (past,
+          present, future). Using these together reduced the false positives a lot.</p>
+      </div>
+    </div>
+
+    <a name="countle"></a>
+    <div class="project">
+      <h3 class="projectName">Countle.com</h3>
+      <div class="leftCont">
+        <img class="projectImg left" src="\Images\countle.png" alt="" />
+        <img class="projectImg" src="\Images\countle2.png" />
+      </div>
+
+      <div class="rightCont">
+        <h3 class="descTitle right">Technologies Used</h3>
+        <div class="techBox">
+          <p class="tech">HTML & CSS</p>
+          <p class="tech">JavaScript</p>
+          <p class="tech">Node.js</p>
+          <p class="tech">SQL (PostgreSQL)</p>
+        </div>
+        <br />
+        <h3 class="descTitle right">Overview</h3>
+        <p class="desc right"><a href="https://countle.com" class="link">Countle</a> is a countdown website. What makes
+          Countle special is that you can just enter the date string you found from other website or social media and
+          Countle automatically creates a countdown from that.
+          <br />
+          <br />
+          Originally Countle was created for <a href="#timezonebot" class="link">the Time zone bot</a> to host the
+          countdowns it generated, because of that Countle also has an API that can be used to create and retrieve
+          countdowns.
+          <br />
+          <br />
+          Countle.com gets over 150,000 pageviews a month. Most of the traffic comes from the Time zone bot.
+        </p>
+        <br />
+        <h3 class="descTitle right">Challenges</h3>
+        <p class="desc right">Node.js requires asynchronous programming as it only has one instance for the server. It
+          was at first hard to get used to it and required quite a lot of studying about node.js and asynchronous
+          programming in general.</p>
+      </div>
+    </div>
+
+    <a name="python-remote"></a>
+    <div class="project">
+      <h3 class="projectName">Python remote control program</h3>
+      <div class="leftCont">
+        <img class="projectImg" src="\Images\py2.png" />
+      </div>
+
+      <div class="rightCont">
+        <h3 class="descTitle right">Technologies Used</h3>
+        <div class="techBox">
+          <p class="tech">Python</p>
+        </div>
+        <br />
+
+        <h3 class="descTitle right">Overview</h3>
+        <p class="desc right">I developed this program with Python while working in the Finnish Defence Forces. The
+          program helped at controlling the dozens of computers we had in our classrooms. With the program we could for
+          example update all the computers, send files/folders, start specific programs and connect the computers to a
+          server or start a server and only connect some computers. The program saved a lot of time, because we could
+          control the computers simultaneously and remotely. Also if something went wrong during training we could just
+          use the remote control and solve the problems faster.
+          <br /><br />
+          The program is easy to use as it has a clear and intuitive GUI. I developed the program using Python and the
+          underlying networking is done with sockets. The program can do pretty much anything, it even supports start up
+          with Wake on LAN. Because the "backbone" of the program is stable and the client program supports remote
+          updating, it's easy to add new functionalities. There haven't been any use case that couldn't have been
+          implemented.</p>
+
+        <h3 class="descTitle right">Challenges</h3>
+        <p class="desc right">I learned a lot about sockets and networking in general. Getting the program to start up
+          and login to Windows was difficult, but was able to solve this by starting the program with windows task
+          scheduler. That would start the program behind when the computer was started up. This way I could issue
+          commands to it, but not yet login. To login I had to issue a command that removed the password and then
+          restart the computer. Then the computer would login straight to windows as it has no password, and the program
+          would change the password back.</p>
+
+      </div>
+    </div>
+
+    <a name="js-game"></a>
+    <div class="project">
+      <h3 class="projectName">JavaScript Game</h3>
+      <div class="leftCont">
+        <img class="projectImg chart" id="jsGamePic" src="\Images\jsGame.png" alt="" />
+      </div>
+
+      <div class="rightCont">
+        <h3 class="descTitle right">Technologies Used</h3>
+        <div class="techBox">
+          <p class="tech">JavaScript</p>
+        </div>
+        <br />
+        <h3 class="descTitle right">Overview</h3>
+        <p class="desc right">The game is created with pure Javascript. It is inspired by a popular mobile game called
+          "BBTAN". The game is never-ending. Your goal is to clear the boxes and not let them hit the bottom. The boxes
+          have hit points, when you hit a box with a ball the hit points go down by one, the box disappears when its hit
+          points go to zero. You start with one ball, but can get more balls by hitting the little balls with a plus
+          sign. When all balls have exited through the bottom a new round starts. At the start of a new round, a new row
+          of boxes appears. As the game goes on the new round of boxes gets more hit points. You score a point when you
+          survive one round.
+          <br />
+          <br />
+          You can play the game here: <a href="\jsGame.html" class="link">https://desentso.github.io/jsGame.html</a>
+
+          <br /><br />
+          You can find the code from Github <a href="https://github.com/Desentso/JavaScriptGame"
+            class="link">https://github.com/Desentso/JavaScriptGame</a>
+        </p>
+        <br />
+        <h3 class="descTitle right">Challenges</h3>
+        <p class="desc right">Creating a good collision-detection was surprisingly difficult. After reading more about
+          the concept and tutorials I got it somewhat working, although it still has some weird bugs when the balls hit
+          the boxes in specific angles and corners.</p>
+        <p class="desc right">I made some poor design choices at the start which made it really hard to update features
+          and debug e.g collision-detection. </p>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3 class="projectName">BlackJack</h3>
+      <div class="leftCont">
+        <img class="projectImg left" src="\Images\blackjack.png" alt="" />
+      </div>
+
+      <div class="rightCont">
+        <h3 class="descTitle right">Technologies Used</h3>
+        <div class="techBox">
+          <p class="tech">Java</p>
+        </div>
+        <br />
+        <h3 class="descTitle right">Overview</h3>
+        <p class="desc right">The game works just like any other Blackjack game. It allows betting. The game uses 4
+          decks and shows unique cards.
+          <br /><br />
+          It's coded with Java and uses object-oriented programming.
+          You can find the code from Github: <a class="link"
+            href="https://github.com/Desentso/Blackjack">https://github.com/Desentso/Blackjack</a>
+        </p>
+        <br />
+        <h3 class="descTitle right">Challenges</h3>
+        <p class="desc right">First time I created a game with Java so getting everything right was challenging. Making
+          the GUI was maybe the most challenging part, also the game flow and displaying all the right information to
+          player.</p>
+      </div>
+    </div>
+
   </div>
-  
-</div>
 
-<a name="contact"></a>
-<div class="contact">
+  <a name="contact"></a>
+  <div class="contact">
 
-  <h2 class="secTitle">Contact</h2>
+    <h2 class="secTitle">Contact</h2>
 
-  <form class="form" method="POST" action="https://formspree.io/desentsobusiness@gmail.com">
+    <form class="form" method="POST" action="https://formspree.io/desentsobusiness@gmail.com">
 
-    <label class="label">Name</label>
-    <input class="input" type="text" name="name" id="name"/>
-    <div id="nameerr" class="error">Name is required</div>
+      <label class="label">Name</label>
+      <input class="input" type="text" name="name" id="name" />
+      <div id="nameerr" class="error">Name is required</div>
 
-    <label class="label">E-mail</label>
-    <input class="input" type="email" name="email" id="email" required />
-    <div id="emailerr" class="error">Name is required</div>
+      <label class="label">E-mail</label>
+      <input class="input" type="email" name="email" id="email" required />
+      <div id="emailerr" class="error">Name is required</div>
 
-    <label class="label">Subject</label>
-    <input class="input" type="text" name="subject" id="subject"/>
-    <div id="subjecterr" class="error">Name is required</div>
+      <label class="label">Subject</label>
+      <input class="input" type="text" name="subject" id="subject" />
+      <div id="subjecterr" class="error">Name is required</div>
 
-    <label class="label">Message</label>
-    <textarea id="message" name="message" required></textarea>
-    <div id="messageerr" class="error">Name is required</div>
+      <label class="label">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      <div id="messageerr" class="error">Name is required</div>
 
-    <input type="submit" value="Send" id="submit"/>
+      <input type="submit" value="Send" id="submit" />
 
-  </form>
+    </form>
 
-</div>
+  </div>
 
 </body>
+
 </html>
